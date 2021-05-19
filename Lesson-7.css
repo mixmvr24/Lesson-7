@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.square{
+    height: 600px;
+    width: 600px;
+    background: black;
+    border: 1px solid red;
+}
+
+.circle{
+    width:100px;
+    height: 100px;
+    background-color: saddlebrown;
+    border-radius: 100%;
+    position: relative;
+    animation-name: circle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  
+}
+
+@keyframes circle{
+  0% {
+    background: #48e99e;
+    top: 0;
+    left: 0;
+  }
+
+  20%{
+    background: #7d36a7;
+    top: 0;
+    left: 500px;
+    transform: skew(15deg);
+  }
+
+  40%{
+    background: #552802;
+    top: 250px;
+    left: 250px;
+    transform: scale(3,4);
+  }
+
+  50%{
+    background: #552802;
+    top: 250px;
+    left: 250px;
+    transform: scaleY(2.5);
+    transform: rotate(200deg);
+  }
+
+  60% {
+    background: #abda3f;
+    top: 500px;
+    left: 500px;
+    transform: scaleX(3);
+    transform: rotate(240deg);
+  }
+
+  80%{
+    background: #8d646b;
+    top: 500px;
+    left: 0;
+    transform: skew(25deg);
+  }
+
+  100% {
+    background: #b43f10;
+    top: 0;
+    left: 0;
+  }
+}
